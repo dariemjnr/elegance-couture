@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries & Appointments - Élégance Couture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            🌟 SUMMER COLLECTION 2025 - LAUNCHING SOON! | 🎉 50% OFF ON SELECTED ITEMS | 📅 FASHION SHOW: DECEMBER 15TH, 2025 | ✨ NEW ARRIVALS EVERY WEEK 🌟
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">ÉLÉGANCE COUTURE</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="trustees.html">Board of Trustees</a></li>
+                <li><a href="inquiries.html" class="active">Inquiries</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Send us a message or book an appointment.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h3>Visit Us</h3>
+                        <p>123 Fashion Avenue, Lagos, Nigeria</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                        <h3>Call Us</h3>
+                        <p>+234 800 123 4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h3>Email Us</h3>
+                        <p>info@elegancecouture.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🕐</div>
+                    <div class="info-text">
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        <p>Sat: 10:00 AM - 4:00 PM</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryType">Inquiry Type *</label>
+                        <select id="inquiryType" name="inquiryType" required>
+                            <option value="">Select inquiry type</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="appointment">Book Appointment</option>
+                            <option value="custom">Custom Design Request</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                        </select>
+                        <span class="error-message" id="inquiryTypeError"></span>
+                    </div>
+
+                    <div class="form-group" id="appointmentDateGroup" style="display: none;">
+                        <label for="appointmentDate">Preferred Appointment Date</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate">
+                    </div>
+
+                    <div class="form-group" id="appointmentTimeGroup" style="display: none;">
+                        <label for="appointmentTime">Preferred Time</label>
+                        <select id="appointmentTime" name="appointmentTime">
+                            <option value="">Select time slot</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for latest updates and offers</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>✓ Message Sent Successfully!</h3>
+                    <p>Thank you for contacting us. We'll get back to you shortly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I place a custom order?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply book an appointment through our form above, selecting "Custom Design Request" as your inquiry type. Our design team will contact you to discuss your requirements in detail.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your return policy?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 30-day return policy for all unworn items with original tags. Custom orders are non-refundable but can be altered at no extra cost.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer international shipping?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We ship worldwide. Shipping costs and delivery times vary by location. Contact us for specific details about your region.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does it take to create a custom piece?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Custom pieces typically take 4-6 weeks from design approval to completion. Rush orders may be available for an additional fee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Élégance Couture. All Rights Reserved.</p>
+        <p>Fashion House of Excellence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

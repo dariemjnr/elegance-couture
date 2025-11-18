@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Élégance Couture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            🌟 SUMMER COLLECTION 2025 - LAUNCHING SOON! | 🎉 50% OFF ON SELECTED ITEMS | 📅 FASHION SHOW: DECEMBER 15TH, 2025 | ✨ NEW ARRIVALS EVERY WEEK 🌟
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">ÉLÉGANCE COUTURE</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="trustees.html">Board of Trustees</a></li>
+                <li><a href="inquiries.html">Inquiries</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Upcoming Events</h1>
+        <p>Join us for exclusive fashion experiences and special occasions</p>
+    </div>
+
+    <!-- Event Calendar Filter -->
+    <div class="event-filter">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="fashion-show">Fashion Shows</button>
+        <button class="filter-btn" data-filter="sale">Sales</button>
+        <button class="filter-btn" data-filter="workshop">Workshops</button>
+        <button class="filter-btn" data-filter="exhibition">Exhibitions</button>
+    </div>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <!-- Featured Event -->
+        <div class="featured-event">
+            <div class="featured-event-image">
+                <img src="https://via.placeholder.com/1200x500/667eea/FFFFFF?text=Summer+Collection+2025+Launch" alt="Summer Collection Launch">
+                <div class="featured-badge">Featured Event</div>
+            </div>
+            <div class="featured-event-content">
+                <span class="event-category fashion-show">Fashion Show</span>
+                <h2>Summer Collection 2025 Grand Launch</h2>
+                <div class="event-meta">
+                    <span class="event-date">📅 December 15, 2025</span>
+                    <span class="event-time">⏰ 7:00 PM - 10:00 PM</span>
+                    <span class="event-location">📍 Lagos Fashion Hall</span>
+                </div>
+                <p>Be the first to witness our stunning Summer 2025 collection. Experience an evening of elegance, style, and innovation as we unveil our latest designs on the runway.</p>
+                <button class="rsvp-btn">RSVP Now</button>
+            </div>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="events-grid">
+            <div class="event-card" data-category="sale">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Black+Friday+Sale" alt="Black Friday Sale">
+                    <div class="event-date-badge">
+                        <div class="date-day">29</div>
+                        <div class="date-month">NOV</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category sale">Sale Event</span>
+                    <h3>Black Friday Mega Sale</h3>
+                    <div class="event-details">
+                        <p>⏰ All Day Event</p>
+                        <p>📍 Online & In-Store</p>
+                    </div>
+                    <p class="event-description">Up to 70% off on selected items! Don't miss this incredible opportunity to refresh your wardrobe.</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="workshop">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Fashion+Styling+Workshop" alt="Styling Workshop">
+                    <div class="event-date-badge">
+                        <div class="date-day">05</div>
+                        <div class="date-month">DEC</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category workshop">Workshop</span>
+                    <h3>Personal Styling Masterclass</h3>
+                    <div class="event-details">
+                        <p>⏰ 2:00 PM - 5:00 PM</p>
+                        <p>📍 Élégance Studio</p>
+                    </div>
+                    <p class="event-description">Learn professional styling tips from our expert fashion consultants. Limited seats available!</p>
+                    <button class="event-btn">Register</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="exhibition">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/95E1D3/333333?text=Fashion+Heritage+Exhibition" alt="Exhibition">
+                    <div class="event-date-badge">
+                        <div class="date-day">10</div>
+                        <div class="date-month">DEC</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category exhibition">Exhibition</span>
+                    <h3>Fashion Heritage Exhibition</h3>
+                    <div class="event-details">
+                        <p>⏰ 10:00 AM - 6:00 PM</p>
+                        <p>📍 National Gallery</p>
+                    </div>
+                    <p class="event-description">Explore the evolution of African fashion through the decades. A journey through style and culture.</p>
+                    <button class="event-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="fashion-show">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/F39C12/FFFFFF?text=Evening+Gala+Collection" alt="Evening Gala">
+                    <div class="event-date-badge">
+                        <div class="date-day">20</div>
+                        <div class="date-month">DEC</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category fashion-show">Fashion Show</span>
+                    <h3>Evening Gala Collection Preview</h3>
+                    <div class="event-details">
+                        <p>⏰ 8:00 PM - 11:00 PM</p>
+                        <p>📍 Grand Ballroom</p>
+                    </div>
+                    <p class="event-description">An exclusive preview of our luxurious evening gala collection. Black tie event.</p>
+                    <button class="event-btn">RSVP</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="sale">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/E74C3C/FFFFFF?text=Holiday+Special+Sale" alt="Holiday Sale">
+                    <div class="event-date-badge">
+                        <div class="date-day">24</div>
+                        <div class="date-month">DEC</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category sale">Sale Event</span>
+                    <h3>Holiday Special Sale</h3>
+                    <div class="event-details">
+                        <p>⏰ 9:00 AM - 9:00 PM</p>
+                        <p>📍 All Locations</p>
+                    </div>
+                    <p class="event-description">Celebrate the season with amazing deals on all categories. Perfect for gift shopping!</p>
+                    <button class="event-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="workshop">
+                <div class="event-image">
+                    <img src="https://via.placeholder.com/400x300/9B59B6/FFFFFF?text=Fashion+Design+Basics" alt="Design Workshop">
+                    <div class="event-date-badge">
+                        <div class="date-day">07</div>
+                        <div class="date-month">JAN</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-category workshop">Workshop</span>
+                    <h3>Introduction to Fashion Design</h3>
+                    <div class="event-details">
+                        <p>⏰ 1:00 PM - 4:00 PM</p>
+                        <p>📍 Design Studio</p>
+                    </div>
+                    <p class="event-description">Discover the fundamentals of fashion design. Perfect for beginners and enthusiasts.</p>
+                    <button class="event-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive updates about upcoming events, exclusive offers, and fashion tips.</p>
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+            <div id="newsletterSuccess" class="newsletter-success" style="display: none;">
+                ✓ Thank you for subscribing!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Élégance Couture. All Rights Reserved.</p>
+        <p>Fashion House of Excellence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
